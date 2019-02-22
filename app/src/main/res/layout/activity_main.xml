@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Knusperpalast"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@android:color/holo_orange_light"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:padding="16dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:src="@drawable/gps"
+            android:layout_below="@id/contact"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:id="@+id/adress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahnhofstr. 31"
+            android:layout_below="@id/contact"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/gps"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/adress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="94405 Landau"
+            android:layout_below="@id/adress1"
+            android:layout_toRightOf="@id/gps"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/telefon"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:src="@drawable/telephone"
+            android:layout_below="@id/adress2"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09951 / 601890"
+            android:layout_toRightOf="@id/gps"
+            android:layout_below="@id/adress2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+
+            />
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:stepSize="1"
+            android:numStars="5"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/tel"
+            android:layout_margin="24dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JETZT ANRUFEN"
+            android:layout_below="@id/rating"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
